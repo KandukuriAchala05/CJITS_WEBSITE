@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Christu Jyothi Institute of Technology and Science</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Open Sans", sans-serif;
+      background: #fffaf3;
+      color: #333;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .navbar-brand img {
+      height: 60px;
+    }
+    .navbar-brand span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #0066cc;
+    }
+    .nav-link {
+      font-weight: 600;
+      color: #222;
+      margin: 0 8px;
+      transition: color .3s;
+    }
+    .nav-link:hover {
+      color: #d46f1b;
+    }
+    section {
+      padding: 70px 0;
+    }
+    .section-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .dept-img {
+      height: 180px;
+      object-fit: contain;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+    .developer-credit {
+      font-size: 14px;
+      color: #999;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="https://www.cjits.ac.in/images/Logo-updated.png" alt="CJITS Logo">
+        <span>Christu Jyothi Institute of Technology and Science</span>
+      </a>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="cjits.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#departments">Departments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#placements">Placements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="text-center">
+    <div class="container">
+      <h2 class="section-title">About CJITS</h2>
+      <p class="lead">
+        Christu Jyothi Institute of Technology and Science (CJITS) is a premier engineering institution
+        dedicated to nurturing future innovators and leaders in technology. With a vision to provide
+        quality education, CJITS empowers students through technical excellence, research, and innovation.
+      </p>
+      <img src="https://www.cjits.ac.in/images/christhu-jyothi-building.jpg" class="img-fluid rounded mt-4" alt="CJITS Campus">
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section id="departments" class="bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Our Departments</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <img src="https://www.cjits.ac.in/images/cse-cjit-icon.png" class="dept-img mb-3" alt="CSE">
+          <h5>Computer Science and Engineering</h5>
+          <p>Focused on innovation, software design, AI, and emerging technologies.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="https://www.cjits.ac.in/images/ece-cjit.png" class="dept-img mb-3" alt="ECE">
+          <h5>Electronics and Communication Engineering</h5>
+          <p>Building skills in embedded systems, IoT, communication and circuits.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="https://www.cjits.ac.in/images/eee-cjit.png" class="dept-img mb-3" alt="EEE">
+          <h5>Electrical and Electronics Engineering</h5>
+          <p>Power systems, automation, and sustainable energy technologies.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="https://www.cjits.ac.in/images/mech-cjit-icon.png" class="dept-img mb-3" alt="ME">
+          <h5>Mechanical Engineering</h5>
+          <p>Innovation in design, thermal systems, and manufacturing technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placements Section -->
+  <section id="placements" class="text-center">
+    <div class="container">
+      <h2 class="section-title">Placements</h2>
+      <p class="lead mb-4">
+        Our dedicated placement cell ensures that students are equipped with industry-relevant
+        skills and opportunities. CJITS has strong collaborations with top recruiters.
+      </p>
+      <img src="https://via.placeholder.com/800x400?text=Placement+Drive" class="img-fluid rounded shadow-sm" alt="Placements">
+      <p class="mt-3">Top recruiters include TCS, Infosys, Wipro, Capgemini, and Tech Mahindra.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light text-center">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="lead">We would love to hear from you!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p><strong>Address:</strong><br>
+            Christu Jyothi Institute of Technology and Science (CJITS), <br>
+            Yeshwantapur, Jangaon, Telangana, India
+          </p>
+          <p><strong>Email:</strong> info@cjits.ac.in</p>
+          <p><strong>Phone:</strong> +91 90000 00000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">© Christu Jyothi Institute of Technology and Science</p>
+      <p class="developer-credit">Developed by Swetha</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
